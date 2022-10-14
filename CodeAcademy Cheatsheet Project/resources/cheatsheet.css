@@ -1,0 +1,11 @@
+h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px;
+}
