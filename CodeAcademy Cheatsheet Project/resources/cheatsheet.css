@@ -1,0 +1,85 @@
+h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse; 
+   
+    font-size: 0.9em;
+    font-family: Roboto, sans-serif;
+    min-height: 2em;
+    min-width: 400px;
+    width: 60%;
+    height: 100%;
+    border: 1em;
+    margin: auto;
+    padding: 1em;
+    
+    
+    
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+   
+}
+
+th {
+  height: 50px;
+
+}
+
+tr:nth-child(even) {
+    background-color: #94A9DB;
+}
+h2 {
+  text-align: center;
+  margin: 3em 1em 1em;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.first-column {
+    font-family: "Noto Sans Mono", monospace;
+    border: 1px solid;
+}
+
+.second-column {
+  font-family: "Noto Sans Mono", monospace;
+  min-width: 100px;
+}
+
+#table-title {
+    font-family: 'Raleway', sans-serif;
+    font-size:medium;
+    border: 1px solid;
+}
+/*Typefaces used: "Noto Sans Mono Light 300, Raleway 700, Roboto 400 & 400 italic" */
+
+@font-face {
+    font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pbCIPrE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Noto Sans Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/notosansmono/v21/BngrUXNETWXI6LwhGYvaxZikqZqK6fBq6kPvUce2oAZcdthSBUsYck4-_A1J093dVQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  
