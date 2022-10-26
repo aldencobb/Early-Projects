@@ -72,7 +72,7 @@
         height: 80px;
         border-bottom: 1px solid white;
         width: 100%;
-        background-color:#0D2526
+        background-color:#0D2526;
         color: white;
         display: inline-block;
         height: var(--top-nav-height);
