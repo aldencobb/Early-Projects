@@ -50,14 +50,25 @@
         color: white;
         padding-top: 100px;
         margin: 0;
+        padding-bottom: 100px;
        
       }
       h1 {
         font-family: "Abril Fatface", sans-serif;
         font-size: 36px;
         padding: none;
+        text-decoration: none;
+        color: white;
         
        
+      }
+
+      h2 {
+      
+        padding: 1em .25em;
+        margin: auto;
+        text-align: center;
+        
       }
 
       h2, h3 {
@@ -124,17 +135,20 @@ header h1 {
       float:right;
 
     }
-
+/*------Basic flexbox parameters------ */
     .flexbox-center {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      border: 2px solid white;
+      margin: auto;
+      width: 50%;
       justify-content: center;
-      border: 1px solid white;
   
   }
+  /*------Sorting color section------ */
   .colorbox {
-    margin: 20px;
+    margin: 20px 30px;
     min-height: 100px;
     width: 20%;
     border: 1px solid black;
@@ -160,4 +174,145 @@ header h1 {
 
 #color-5 {
   background-color: hsla(0, 0%, 40%, 1);
+}
+
+/*------Sorting Typeface section------ */
+
+.fontbox-Abril {
+  font-family: "Abril Fatface", serif;
+  font-size: 36px;
+  text-align: left;
+  border-bottom: 1px dotted white;
+  width: 100%;
+}
+
+#abril-title {
+  font-family: "Abril Fatface", serif;
+  font-size: 36px;
+  
+}
+#montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+
+.fontbox-Cabin {
+  font-family: "Cabin", sans-serif;
+  font-size: 28px;
+  text-align: left;
+  border-bottom: 1px dotted white;
+  width: 100%;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.fontbox-Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  width: 100%;
+  
+}
+
+#typefaces {
+  justify-content:center;
+  padding: 10px;
+}
+/*------Textstyles section------ */
+#textstyles {
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+#textstyles-subheading {
+  text-align: left;
+}
+/*------Button section------ */
+#button-1 {
+  border: 1px solid white;
+  border-radius: 25%;
+  margin: 1em;
+  padding: 1em;
+  background-color:black;
+}
+
+#button-2 {
+  border: 1px solid white;
+  margin: 1em;
+  padding: 1em;
+  background-color: #1b5051;
+}
+
+#button-3 {
+  border-radius: 10% / 50%;
+  border: 1px solid white;
+  margin: 1em;
+  padding: 1em;
+  background-color: #0D2526;
+  
+}
+
+/* Psuedo Classes*/
+
+#button-1:hover {
+  background-color:hsla(0, 0%, 0%, .75)
+}
+
+#button-1:active {
+  background-color: hsla(0, 0%, 0%, .25);
+}
+
+#button-2:hover {
+  background-color: hsla(181, 50%, 21%, .75);
+}
+
+#button-2:active {
+  background-color: hsla(181, 50%, 21%, .25);
+}
+
+#button-3:hover {
+  background-color: hsla(182, 49%, 10%, .75);
+}
+
+#button-3:active {
+  background-color: hsla(182, 49%, 10%, .25);
+}
+
+#colors-button:hover {
+  color: grey;
+  transition: 0.1s;
+}
+
+#colors-button:active {
+  color: white;
+}
+
+#typefaces-button:hover {
+  color: grey;
+  transition: 0.1s;
+}
+
+#typefaces-button:active {
+  color: white;
+}
+
+#textstyles-button:hover {
+  color: grey;
+  transition: 0.1s;
+}
+
+#textstyles-button:active {
+  color: white;
+}
+
+#buttons-button:hover {
+  color: grey;
+  transition: 0.1s;
+}
+
+#buttons-button:active {
+  color: white;
 }

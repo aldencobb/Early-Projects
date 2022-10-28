@@ -10,18 +10,20 @@
         <body>
             <!--Header/navbar-->
             <header>
-                <h1>Alden's First Style Guide</h1>
+                <a href="#top">
+                    <h1>Alden's First Style Guide</h1>
+                </a>
                 <nav>
                     <ul>
-                     <li><a href="#target-colors">Colors</a>
+                     <li><a href="#target-colors" id="colors-button">Colors</a>
                      </li>
                         <li>
-                        <a href="#target-typefaces">Typefaces</a>
+                        <a href="#target-typefaces" id="typefaces-button">Typefaces</a>
                         </li>
                         <li>
-                        <a href="#target-textstyles">Text Styles</a>
+                        <a href="#target-textstyles" id="textstyles-button">Text Styles</a>
                         </li>
-                        <li><a href="#target-buttons">Buttons</a>
+                        <li><a href="#target-buttons" id="buttons-button">Buttons</a>
                         </li>
                     </ul>
                 </nav>
@@ -57,37 +59,43 @@
             </section>
             <!--Beginning of Typefaces-->
             <a class="anchor" name="target-typefaces"></a>
-            <section id="typefaces">
+            <section>
                 <h2>Typefaces</h2>
-                <div class="flexbox-center">
+                <div class="flexbox-center" id="typefaces">
                     <div class="fontbox-Abril">
-                        <p class="font-label">
-                            <h3>Abril Fatface</h3>
+                        <p>
+                            <h3 id="abril-title">Abril Fatface</h3>
                         </p>
                         <p class="sample-sentence">
                             The quick brown fox jumps over the lazy dog.
                         </p>
                     </div>
+
+                    <div class="break"></div> <!-- break -->
+
                     <div class="fontbox-Cabin">
                         <p class="font-label">
-                            <h3>Cabin</h3>
+                            <h3 id="cabin-title">Cabin</h3>
                         </p>
                         <p class="sample-sentence">
                             The quick brown fox jumps over the lazy dog.
                         </p>
                     </div>
+
+                    <div class="break"></div> <!-- break -->
+
                     <div class="fontbox-Montserrat">
                         <p class="font-label">
-                            <h3>Montserrat</h3>
+                            <h3 id="montserrat-title">Montserrat</h3>
                         </p>
                         <p class="sample-sentence">
                             The quick brown fox jumps over the lazy dog.
                         </p>
                         <p class="sample-sentence" id="Montserrat-italic">
-                            The quick brown fox jumps over the lazy dog.
+                            <em>The quick brown fox jumps over the lazy dog.</em>
                         </p>
                         <p class="sample-sentence" id="Montserrat-semibold">
-                            The quick brown fox jumps over the lazy dog.
+                            <strong>The quick brown fox jumps over the lazy dog.</strong>
                         </p>
                     </div>
                 </div>
@@ -96,15 +104,15 @@
             <a class="anchor" name="target-textstyles"></a>
             <section class="textstyles">
                 <h2>Text Styles</h2>
-                <div class="flexbox-center">
-                    <div id="textstyles">
+                <div class="flexbox-center" id="textstyles">
+                    <div>
                         <h1>Main Page Heading</h1>
                         <ul>
                             <li>Font-weight: 400</li>
                             <li>Font-size: 36px</li>
                             <li>Font-family: Abril Fatface</li>
                         </ul>
-                        <h2>Subheading</h2>
+                        <h2 id="textstyles-subheading">Subheading</h2>
                         <ul>
                             <li>Font-weight: 700</li>
                             <li>Font-size: 28px</li>
