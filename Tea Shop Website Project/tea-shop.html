@@ -32,9 +32,9 @@
 
             <section id="mission-section" name="target-mission">
                                        
-                <!--child element of the background is the text of the section-->
-                <div id="mission-text">
-                    <h2>Our Mission</h2>
+                <!--child element is the text of the section-->
+                <div id="mission-text" >
+                    <h2 class="section-subheaders" id="mission-title">Our Mission</h2>
                     <h4>Handpicked, Artisanally-Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
                 </div>
 
@@ -42,21 +42,82 @@
 
             <!--Optional Spacer Section here-->
 
-            <!--Featured Tea Section; parent flexbox with two children, one of which is flexbox-->
+            <!--Featured Tea Section; parent flexbox with two children, the second of which is flexbox of flexboxes-->
 
             <section id="featured-tea" name="target-tea">
 
                 <div id="tea-features">
 
-                    <h2 id="tea-header">Tea of the Month</h2>
+                    <h2 id="tea-header" class="section-subheaders">Tea of the Month</h2>
                     <h4>What's Steeping at The Tea Cozy?</h4>
                 </div>
 
-                <div id="products">
-                    
+                <div id="products"> <!--children need to be in flexbox rows; grandchildren need to be flexboxes too-->
+
+                    <div class="tea-products"> <!--children need verticle alignment; i.e. this element is a flexbox-->
+                        <img src="./resources/berryblitz.jpg" alt="fall berry blitz tea" class="product-picture">
+                        <h4>Fall Berry Blitz Tea</h4>
+                    </div>
+
+                    <div class="tea-products">
+                        <img src="./resources/spiced-rum.jpg" alt="spiced rum tea" class="product-picture">
+                        <h4 class="product-titles">Spiced Rum Tea</h4>
+                    </div>
+
+                    <div class="tea-products">
+                        <img src="./resources/donut.jpg" alt="seasonal doughnut" class="product-picture">
+                        <h4 class="product-titles">Seasonal Donuts</h4>
+                    </div>
+
+                    <div class="tea-products">
+                        <img src="./resources/myrtle-ave.jpg" alt="myrtle avenue tea" class="product-picture">
+                        <h4 class="product-titles">Myrtle Ave Tea</h4>
+                    </div>
+
+                    <div class="tea-products">
+                        <img src="./resources/bedford-bizarre.jpg" alt="Bedford Bizarre Tea">
+                        <h4 class="product-titles">Bedford Bizarre Tea</h4>
+                    </div>
                 </div>
 
             </section>
+
+            <!--Optional Spacer Section Here-->
+
+            <!--Start of Locations Section-->
+
+            <section id="locations" name="target-locations"> <!--This section is a flexbox with two children-->
+
+                <h2 id="locations-title" class="section-subheaders">Locations</h2>
+
+                <div id="location-datasets-container">  <!--this needs to be a flexbox to align dataset into a 3-box row-->
+                    
+                    <div class="location-databox"> <!--these will be flexboxes to align title with data; also the elements that need black/transluscent backgrounds-->
+                        <h3 class="databox-title">Downtown</h3>
+                        <p class="databox-text">384 West 4th St <br> Suite 108 <br> Portland, Maine</p> <!-- will text work best as one paragraph with line spacing or three p sections separated by linebreaks?-->
+                    </div>
+
+                    <div class="location-databox">
+                        <h3 class="databox-title">East Bayside</h3>
+                        <p class="databox-text">3433 Phisherman's Avenue <br> (Northwest Corner) <br> Portland, Maine</p>
+                    </div>
+
+                    <div class="location-databox">
+                        <h3 class="databox-title">Oakdale</h3>
+                        <p class="databox-text">515 Crescent Avenue <br> Second Floor <br> Portland, Maine</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--spacing specified, i.e. no spacer allowed-->
+
+            <!--beginning of footer section-->
+
+            <footer>
+                
+            </footer>
 
         </body>
 
