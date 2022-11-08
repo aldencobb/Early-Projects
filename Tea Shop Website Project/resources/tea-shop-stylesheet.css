@@ -1,0 +1,63 @@
+/* 
+1. General Styling and Body Elements
+2. Nav Styling, Logo, Button
+3. Mission Section
+4. Featured Tea Section
+5. Locations Section\
+6. Footer
+
+*/
+
+/* 1. General Styling*/
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    margin: auto;
+
+}
+
+
+/* 2. Navigation Bar; Logo & Buttons */
+
+nav {
+    position: fixed;
+    box-sizing: border-box;
+    height: 69px;
+    margin-top: 0;
+    width: 100%;
+    text-decoration: underline;
+    border-bottom: 1px solid seashell;
+    overflow: hidden;
+    
+}
+
+#top-logo {
+    box-sizing: border-box;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+ul > li {
+    display: inline-block;
+    position: inherit;
+    width: 30%;
+    height: 65px;
+    color: seashell;
+    list-style: none;
+    text-decoration: none;
+    z-index: 1;
+    
+}
+
+
+
+
+#mission-section {
+    padding-top: 200px;
+}
