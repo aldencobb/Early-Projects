@@ -14,18 +14,21 @@
         <body>
                         <!-- a couple of fixes are needed here. Entire header should be flexbox so logo and nav fit side-by-side; nav should be another flexbox.-->
             <header>
-                <nav>
+                
                     <!--Logo-->
-                    <img id="top-logo" alt="Tea Cozy Logo" src='./resources/logo.webp' type="webp">
+                    <a href="#" >
+                        <img id="top-logo" alt="Tea Cozy Logo" src='./resources/logo.webp' type="webp"> 
+                    </a>
                     
                     <!--Nav List-->
-                    <ul class="nav-list">
-                        <li><a href="#target-mission" class="nav-button">Mission</a></li>
-                        <li><a href="#target-tea" class="nav-button">Featured Tea</a></li>
-                        <li><a href="#target-locations" class="nav-button">Locations</a></li>
+
+                    <nav class="nav-list">
+                        <a href="#target-mission" class="nav-button">Mission</a>
+                        <a href="#target-tea" class="nav-button" id="tea-button">Featured Tea</a>
+                        <a href="#target-locations" class="nav-button">Locations</a>
                   
-                    </ul>
-                </nav>
+                    </nav>
+                
             </header>
             <!--First Section: Mission; parent element needs background-image property set in CSS-->
 

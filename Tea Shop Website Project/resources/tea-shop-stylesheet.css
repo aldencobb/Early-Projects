@@ -17,6 +17,7 @@ body {
     background-color: black;
     opacity: 0.9;
     margin: auto;
+    width: 100%;
 
 }
 
@@ -32,8 +33,12 @@ header {
     text-decoration: underline;
     border-bottom: 1px solid seashell;
     overflow: hidden;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    opacity: .8;
+    overflow: hidden;
     
 }
 
@@ -42,19 +47,43 @@ header {
     height: 50px;
     margin-left: 10px;
     margin-top: 10px;
+    
 }
 
 nav {
     display: flex;
     max-height: 60px;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
     
+    
+
+}
+
+nav a {
+    color: seashell;
+    text-decoration: underline;
+    margin: 15%;
 }
 
 
+#tea-button {
+    text-align:justify;
+    min-width:fit-content; /* this causes compatibility issues with Firefox and Samsung */
+    
+    
 
+}
 
-
-
+/* 3. Mission Section */
 #mission-section {
-    padding-top: 200px;
+    background-image: url(./missions-background.jpg);
+    height: 700px;
+    width: 80%;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
 }
