@@ -125,6 +125,7 @@ nav a {
     right:50%;
     flex-wrap: wrap;
     margin: auto;
+    padding-bottom: 60px;
 
 
 }
@@ -141,16 +142,112 @@ nav a {
 #products {
     max-width: 95%;
     display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
     
 }
 
 .tea-products {
     max-height: 230px;
-    width: 
-    
+    margin: 8px;
+    align-items: center;
 }
 
 .product-picture {
     height: 200px;
     width: 300px;
+}
+
+.product-titles {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+    
+/* 6. Locations Section */
+
+#locations {
+    display: flex;
+    flex-direction:column;
+    height: 500px;
+    width: 85%;
+    background-image: url(./locations-background.jpg);
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+
+}
+
+#locations-title {
+    width: 100%;
+    box-sizing:border-box;
+    text-align: center;
+    padding-top: 50px;
+    margin:0;
+}
+
+#locations-container {
+    display: inline-flex;
+    flex-wrap:wrap;
+    width: 80%;
+    height: 50%;
+    align-items: center;
+    justify-content:center;
+}
+
+.location-databox {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+        margin: 15px auto;
+    text-align: center;
+    background-color: black;
+    opacity: 1;
+    line-height: 2.5;
+    z-index: 1;
+}
+
+.databox-title {
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 0;
+
+}
+
+.databox-text {
+    text-align: center;
+    line-height: 3;
+    margin-top: 0;
+}
+
+/* 7. Footer Section */
+
+footer {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    box-sizing:border-box;
+    align-items: center;
+}
+
+#contact-info {
+    
+    width: 85%;
+    
+    text-align: center;
+}
+
+#copyright {
+    text-align: left;
+    box-sizing: border-box;
+    margin: 20px; 
+    padding-left: 0;
 }
