@@ -7,7 +7,7 @@ html {
 
 .main-content {
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
+  top: 5.326rem; /* To offset for fixed header. I changed this from 5-something because I reckoned it was necessary to align the green box; not sure if that is the case or if the green box ought to be offset internally within its container. */
 }
 
 .center {
@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 1;
 }
 
 header .content {
@@ -125,9 +126,16 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);  /* I don't know why this isn't displaying */
+  background-position: bottom;
+  background-size:cover;
 }
 
+/* Below is the green box that needs its position moved relative to its parent element*/
 #sign-up-cta {
+  position: absolute;
+  top: 10.625rem;
+  left: 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
