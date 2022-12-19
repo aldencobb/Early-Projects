@@ -25,7 +25,10 @@ html {
 }
 
 .image-container img {
-  display: block;
+  display: inline-block;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -126,14 +129,15 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url(../images/banner-landingpage.jpg);  /* I don't know why this isn't displaying */
+  background-image: url(../images/banner-landingpage.jpg);  /* I fixed the relative file path to make this display.*/
   background-position: bottom;
   background-size:cover;
+  background-repeat: no-repeat;
 }
 
 /* Below is the green box that needs its position moved relative to its parent element*/
 #sign-up-cta {
-  position: absolute;
+  position: relative;
   top: 10.625rem;
   left: 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
@@ -228,34 +232,41 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding:0;
+  margin-top: 4rem;
   background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
+  
+  padding: 2rem; 
   margin: 0px 1.25rem;
   background-color: white;
 }
 
+
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 0;
+  display: inline-block;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
-  color: #4a4a4a;
+  line-height: 1.2;
+  font-family: "Roboto";
+  color: #4A4A4A;
 }
 
 .feature h3 {
   font-size: 1rem;
   line-height: 1.2;
   font-weight: 300;
+  font-family:"Roboto";
   color: #4a4a4a;
 }
 
@@ -289,6 +300,8 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  margin-top: 2.875rem;
+  margin-bottom: 5rem;
 }
 
 #filters-section .content {
@@ -299,6 +312,7 @@ header .mobile {
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
+  font-family: "Roboto";
   color: white;
 }
 
@@ -306,12 +320,16 @@ header .mobile {
   font-size: 1rem;
   line-height: 1.4;
   font-weight: 300;
+  font-family: "Roboto";
   color: white;
 }
 
-#filters-section .images-container {
+#filters-section .images-container {      /* Had to make this one flex. */
   max-width: 100%;
-  padding: 0 1%;
+  padding: 0px 1%;
+  /* padding: 5rem 1% 4rem 1%; This doesn't do what I intended. Must be the right dimensions in the wrong place. The spec sheet doesn't look to scale, but I am puzzled.*/
+  display: flex;
+
 }
 
 @media only screen and (max-width: 760px) {
