@@ -6,6 +6,7 @@ html {
 }
 
 .main-content {
+  background-color: #f3f3f3;
   position: relative;
   top: 5.326rem; /* To offset for fixed header. I changed this from 5-something because I reckoned it was necessary to align the green box; not sure if that is the case or if the green box ought to be offset internally within its container. */
 }
@@ -338,7 +339,7 @@ header .mobile {
   }
 
   #filters-section .content {
-    margin-bottom: 1rem;
+     margin-bottom: 1rem; 
   }
 
   #filters-section .content h2 {
@@ -366,19 +367,22 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  margin-bottom: 5rem;
 }
 
 #quotes-section content {
-  padding: 5rem 0;
+  padding: 5rem 1.875rem;
+  
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+ 
 }
 
 #quotes-section quote-citation {
@@ -390,7 +394,7 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
@@ -406,6 +410,8 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
+  max-height: 3.875rem;
+  height: 3.875rem; /* Don't know if this is the most elegant way to fix the height.*/
   padding: 1.5rem 2rem;
 }
 
@@ -413,10 +419,13 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-family: "Roboto", sans-serif;
+  padding: 2rem 2rem 0px 2rem;
 }
 
 footer .copyright {
   flex-grow: 1;
+  
 }
 
 @media only screen and (min-width: 760px) {
