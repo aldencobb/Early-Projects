@@ -1,3 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 html {
     height: 100%;
+    background-color: #1b1b1b;
+    font-family: "Inconsolata", monospace;
+    color: #b5b5b5;
+
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Header */
+ header nav.mobile {
+    display: none;
+ }
+
+ header {
+    position:fixed;
+    height: 6rem;
+    width: 100%;
+    background-color:#6B2828;
+    text-decoration: none;
+ }
+
+ header ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    color:#b5b5b5;
+    width: 85%;
+    height: 2rem;
+    padding-top: 1.5rem;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    flex-grow: 1;
+ }
+
+ #desktop-logo img {
+    width: 4rem;
+    height: 4rem;
+    
+    overflow:hidden;
+    flex-grow: 2;
+    align-self: center;
+    padding-bottom: 1rem;
+    object-fit:cover;
+    border-radius: 100%;
+ }
