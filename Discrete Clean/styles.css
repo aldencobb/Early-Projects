@@ -113,11 +113,18 @@ body {
    justify-content: space-around;
  }
 
+ /* can't seem to get the splash image looking right. Something about vertical sizing isn't allowing for reconfiguration. ahh, box-sizing*/
  .main-banner {
    margin: 2rem 5%;
+   box-sizing: border-box;
    padding: 0;
    width: 85%;
+   height: 40rem;
+   align-self: center;
    object-fit: contain;
    background-image: url(./resources/spray\ bottle\ splash\ image.jpg);
-
+   background-attachment: local;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
  }
