@@ -171,9 +171,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; 
+  align-items: center;
+  align-self: center;
 
  }
 
+ /* From before refactoring; The descriptor is deffo wrong now.
  .picture-container figcaption {
   color:#b5b5b5;
   font-family: "Inconsola", monospace;
@@ -181,18 +184,18 @@ h2 {
   font-weight: normal;
 
  }
+ */
 
- .picture-container {  /* These two declarations fix default image sizing, which causes img's to vastly oversize their parent elements. Currently playing around with settings to make the portraits behave*/
+ .image-container {  /* These two declarations fix default image sizing, which causes img's to vastly oversize their parent elements. Currently playing around with settings to make the portraits behave*/
   min-width: 0;
   min-height:0;
-  size: 10rem;
+  height: 20rem;
   box-sizing: border-box;
-   display: flex;
-  flex-direction: column; 
+   
   
  }
 
- .picture-container img {
+ .image-container img {
   width: auto;
   height: 100%;
   overflow: auto;
@@ -205,4 +208,14 @@ h2 {
   height: 100%;
  }
 
+ figcaption {
+  color:#b5b5b5;
+  font-family:"inconsola", monospace;
+  font-size: 1em;
+  padding: 1rem;
+  text-align: center;
+ }
+
+
+/*2.b. Mission Section */
 
