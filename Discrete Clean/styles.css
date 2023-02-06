@@ -177,6 +177,7 @@ h2 {
  /* 2.a The four Content Sections share some commonality.*/
 
  .body-section {
+  
   padding: 1rem;
   margin: 3rem, 3rem;
   width: 70%;
@@ -235,8 +236,13 @@ h2 {
 
 #mission-section {
   align-content: flex-start;
-  
+  justify-content: space-around;
   padding: 1rem, 4rem;
   
 }
 
+.mission-body {
+  flex: 2 0 5rem;
+  flex-wrap:wrap;
+  width: 70%;
+}
